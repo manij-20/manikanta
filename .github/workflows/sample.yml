@@ -10,7 +10,7 @@ jobs:
         run: echo "Good Evening"
   second-job: 
     runs-on: ubuntu-latest
-      steps:
+    steps:
         - name: print statement 3
           run: echo "today date is 10-12-25"
         - name: print statement 4
