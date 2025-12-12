@@ -6,22 +6,22 @@ jobs:
       APP_NAME: "Hello_goodmorning"
     runs-on: ubuntu-latest
     steps:
-      - env: 
-          VERSION: "latest"
-      - name: print a statement 1
-        run: echo "$APP_NAME from GitHub Actions!"
-      - name: print a statement 2
-        run: echo "Good Evening $VERSION"
+    - env: 
+        VERSION: "latest"
+    - name: print a statement 1
+      run: echo "$APP_NAME from GitHub Actions!"
+    - name: print a statement 2
+      run: echo "Good Evening $VERSION"
   second-job: 
     env:
       TOOL: "maven"
     runs-on: ubuntu-latest
     steps:
-      - env: 
-          LANGUAGE: "java"
-      - name: print statement 3
-        run: echo "language is $LANGUAGE"
-      - name: print statement 4
-        run: echo "tool is $TOOL"
+    - env: 
+        LANGUAGE: "java"
+    - name: print statement 3
+      run: echo "language is $LANGUAGE"
+    - name: print statement 4
+      run: echo "tool is $TOOL"
 
         
